@@ -1,7 +1,7 @@
 import { Product } from "@prisma/client";
+import Image from "next/image";
 import Link from "next/link";
 import PriceTag from "./PriceTag";
-import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -17,12 +17,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       href={"/products/" + product.id}
       className="card w-full bg-base-100 transition-shadow hover:shadow-xl"
     >
-      
       <figure>
         <Image
           src={product.imageUrl}
           alt={product.name}
-          width={700}
+          width={800}
           height={400}
           className="h-48 object-cover"
         />

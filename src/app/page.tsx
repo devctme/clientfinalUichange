@@ -88,14 +88,15 @@ export default async function Home({
         </div>
       </div>
       {/* end hero section */}
-      {currentPage === 1 && (
+      {/* latast 1 products  */}
+      {/* {currentPage === 1 && (
         <div className="hero rounded-xl bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
             <Image
               src={products[0].imageUrl}
               alt={products[0].name}
               width={400}
-              height={800}
+              height={400}
               className="w-full max-w-sm rounded-lg shadow-2xl"
               priority
             />
@@ -111,7 +112,9 @@ export default async function Home({
             </div>
           </div>
         </div>
-      )}
+      )} */}
+
+      {/* latast 1 products  */}
 
       {/* value section start  */}
       <div className=" my-6 px-4 py-7">
